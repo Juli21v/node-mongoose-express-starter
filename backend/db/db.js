@@ -1,7 +1,7 @@
-import moongose from "mongoose";
+import mongoose from "mongoose";
 const dbconnection = async () => {
   try {
-    await moongose.connect(process.env.DB_CONNECTION, {
+    await mongoose.connect(process.env.DB_CONNECTION, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
